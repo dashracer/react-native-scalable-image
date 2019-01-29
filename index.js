@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image, TouchableOpacity, ImageBackground } from 'react-native';
+import { TouchableOpacity, ImageBackground } from 'react-native';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
+import FastImage from 'react-native-fast-image'
 
 export default class ScalableImage extends React.Component {
     constructor(props) {
@@ -78,7 +79,7 @@ export default class ScalableImage extends React.Component {
     render() {
         const ImageComponent = this.props.background
             ? ImageBackground
-            : Image;
+            : FastImage;
 
         const image = <ImageComponent { ...this.props } style={[this.props.style, this.state.size]}/>;
 
