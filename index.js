@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TouchableOpacity, ImageBackground } from 'react-native';
+import { TouchableOpacity, ImageBackground, Image } from 'react-native';
 import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
 import FastImage from 'react-native-fast-image'
 
